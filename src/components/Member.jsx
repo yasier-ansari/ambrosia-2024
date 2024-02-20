@@ -62,10 +62,12 @@ const AnimatedTooltip = ({ items }) => {
                                             onMouseMove={handleMouseMove}
                                             src={item.image}
                                             alt={item.name}
-                                            className="object-cover absolute bottom-0 !m-0 !p-0 object-top card-image-container h-40 w-40 border-2 group-hover:scale-105 group-hover:z-30 border-white transition duration-500"
+                                            className="object-cover absolute top-20 right-8 !m-0 !p-0 object-top card-image-container h-32 w-32 footerBorder border-2 group-hover:scale-105 group-hover:z-30 border-white transition duration-500"
                                         />
                                         <img src={borderLessImage}
-                                            alt={`${item.name} placeholder `} />
+                                            alt={`${item.name} placeholder `} className="h-72 w-auto object-cover " />
+                                        <p className="absolute bottom-12 right-6 text-black henny text-2xl  ">Safwan Bebal</p>
+                                        <p className="text-center text-xl " >General Secretary</p>
                                     </div>
 
                                 </div>
