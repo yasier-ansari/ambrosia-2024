@@ -21,7 +21,7 @@ const FirstParallax = () => {
                 style={{ y: textY }}
                 className="font-bold text-white text-7xl md:text-9xl relative z-10"
             >
-                <div className="caption henny  text-8xl -mt-20 ">AMBROSIA</div>
+                <div className="caption henny  text-8xl -mt-20 glowText">AMBROSIA</div>
                 <div className=" forum text-4xl">The Magic Begins</div>
             </motion.h1 >
 

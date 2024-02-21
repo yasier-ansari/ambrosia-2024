@@ -11,6 +11,16 @@ import Header from "./components/Header";
 import SectionContainer from "./components/SectionContainer";
 import AnimatedTooltip from "./components/Member";
 import { people } from "./utils/members";
+import HistoryParallax from "./components/HistoryParallax";
+import { events } from "./utils/event";
+import Sponsor1 from './assets/images/sponsor-1.png'
+import Sponsor2 from './assets/images/sponsor-2.png'
+import Sponsor3 from './assets/images/sponsor-3.png'
+import Sponsor4 from './assets/images/sponsor-4.png'
+import Sponsor5 from './assets/images/sponsor-5.png'
+import Sponsor6 from './assets/images/sponsor-6.png'
+import EventCard from './assets/images/event-card.jpg'
+import { LuCalendarCheck, LuDollarSign, LuMap, LuTimer } from "react-icons/lu";
 
 function App() {
 
@@ -47,6 +57,210 @@ function App() {
         /> */}
         <SectionContainer title={'Members'} >
           <AnimatedTooltip items={people} />
+        </SectionContainer>
+        <SectionContainer title={'History'} >
+          <HistoryParallax products={events} />
+        </SectionContainer>
+        <SectionContainer title={'Sponsors'} >
+          <div className="grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 ">
+            <img src={Sponsor1} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto rotate-3  " />
+            <img src={Sponsor2} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto -rotate-3  " />
+            <img src={Sponsor3} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto -rotate-6  " />
+            <img src={Sponsor4} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto rotate-6  " />
+            <img src={Sponsor5} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto -rotate-3  " />
+            <img src={Sponsor6} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto rotate-6  " />
+
+          </div>
+        </SectionContainer>
+        <SectionContainer title={'Events'} >
+          <div className="grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 ">
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center flex-col space-y-2 " >
+                <h3 className="henny text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 h-auto aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center flex-col space-y-2 " >
+                <h3 className="henny text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 h-auto aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center flex-col space-y-2 " >
+                <h3 className="henny text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 h-auto aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center flex-col space-y-2 " >
+                <h3 className="henny text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 h-auto aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center flex-col space-y-2 " >
+                <h3 className="henny text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: `url(${EventCard})`,
+                backgroundPosition: "bottom",
+                backgroundSize: "cover",
+              }}
+              className="flex w-full min-w-32 h-auto aspect-[8/12] max-w-[300px] flex-col footerBorder justify-center items-center mx-auto space-y-3 p-2 sm:p-3 ">
+              <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images' className="bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  " />
+              <div className="w-full flex justify-center items-center flex-col space-y-2 mx-auto" >
+                <h3 className="henny text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center " >Treasure Hunt</h3>
+                <h5 className=" text-black px-2 " >get ready for an amazing treasure hunt</h5>
+                <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuCalendarCheck />
+                    <p>Sat, 12</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuTimer />
+                    <p>4:30 - 6:30 pm</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuDollarSign />
+                    <p>200</p>
+                  </div>
+                  <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
+                    <LuMap />
+                    <p>Central Building</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </SectionContainer>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint deleniti a praesentium quia dignissimos, excepturi ad tempora aperiam nisi odio quis minus sunt, provident veniam esse molestiae dolorem aliquam laborum.
         Nobis dolores dicta illo qui, perspiciatis earum, neque quo repellendus sapiente rem natus praesentium sequi commodi molestias reiciendis, modi maxime delectus nesciunt? Quidem, itaque quo! Consectetur sed quod quidem iure.
