@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, useTransform, AnimatePresence, useMotionValue, useSpring } from "framer-motion";
 import borderLessImage from '../assets/images/borderless-card.jpg'
-const AnimatedTooltip = ({ items }) => {
+import { cn } from "../utils/merge";
+const AnimatedTooltip = ({ items, className }) => {
     const randomRotation = () => {
         console.log(Math.floor(Math.random() * 31) - 5)
         return Math.floor(Math.random() * 31) - 5
@@ -26,7 +27,7 @@ const AnimatedTooltip = ({ items }) => {
     };
     randomRotation()
     return (
-        <div className="flex items-center justify-center" >
+        <div className={cn(`flex items-center justify-center ${className} flex-wrap`)} >
             {items?.map((item) => (
                 <div
                     className="-mr-4 relative group"
@@ -83,7 +84,7 @@ const AnimatedTooltip = ({ items }) => {
                             onMouseMove={handleMouseMove}
                             src={item.image}
                             alt={item.name}
-                            className="object-cover relative !m-0 !p-0 object-top h-40 w-40 border-2 group-hover:scale-105 group-hover:z-30 border-white transition duration-500 bg-red-100 "
+                            className="object-cover relative !m-0 !p-0 object-top h-40 w-40 border-2 group-hover:scale-105 group-hover:z-30 border-white transition duration-500 footerBorder rounded-2xl bg-red-100 "
                         />
 
                     </div>

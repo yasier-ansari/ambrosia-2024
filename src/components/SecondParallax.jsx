@@ -8,7 +8,7 @@ import owlImage from '../assets/images/owl.png'
 import Logo from '../assets/images/logo.jpg'
 import instaLogo from '../assets/images/insta-logo.png'
 import { LuInstagram } from "react-icons/lu";
-const SecondParallax = () => {
+const SecondParallax = ({ className }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -21,7 +21,7 @@ const SecondParallax = () => {
         <>
             <div
                 ref={ref}
-                className="w-full h-screen overflow-hidden relative grid place-items-center text-black"
+                className="w-full h-screen overflow-hidden relative grid place-items-center z-10 text-black mt-20"
             >
 
                 <motion.div
@@ -92,30 +92,8 @@ const SecondParallax = () => {
                         </div>
                     </div>
                 </div>
-                {/* <motion.div
-                className="absolute inset-0 z-10"
-                style={{
-                    backgroundImage: `url(${MiddleHeroImage})`,
-                    backgroundPosition: "bottom",
-                    backgroundSize: "cover",
-                    y: backgroundY,
-                }}
-            >
-                <img className="absolute inset-0 -top-[200px] z-10 filter sepia-50 object-cover" src={FrontHeroImage} />
-            </motion.div> */}
-
             </div >
-            <div className="flex items-center justify-between w-full h-full mx-auto px-8 md:px-16 lg:px-24 ">
-                <div>
-                    MIT Licensed
-                </div>
-                <div>
-                    &copy; Ambrosia
-                </div>
-                <div>
-                    Made By Rahil
-                </div>
-            </div>
+
         </>
     );
 }
