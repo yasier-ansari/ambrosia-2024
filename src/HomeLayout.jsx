@@ -415,6 +415,7 @@ function HomeLayout() {
                                             time='2:00 pm '
                                             price={'200'}
                                             location={'Classroom'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLSf_RGIS6H2o_OUF42U7Cg0Svc4w4VWxhnd6r6KPOwRuTiPEMA/viewform'}
                                         />
                                         <EventCardComponent
                                             img={Event2}
@@ -424,6 +425,7 @@ function HomeLayout() {
                                             time='2:00 pm'
                                             price={'200'}
                                             location={'Central Building'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLSd9Fj1VWHTcjaMdsNedVEaUjNZ23nU5hOa3y8PNe5f_2gADAQ/viewform'}
                                         />
                                         <EventCardComponent
                                             img={Event3}
@@ -433,6 +435,7 @@ function HomeLayout() {
                                             time='7:00 pm'
                                             price={'200'}
                                             location={'Central Building'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLSf5tKGrklxGK6_gqkbelpShOS_UmQx-sxfICISZnFg4K4Qg2g/viewform?usp=sf_link'}
                                         />
                                         <EventCardComponent
                                             img={Event4}
@@ -442,6 +445,7 @@ function HomeLayout() {
                                             time='2:00 pm'
                                             price={'200'}
                                             location={'Central Building'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLSevYJYbXCez0X2hP_Cc4uMn-wAseRPXTTqxpneeylMW9RXEog/viewform'}
                                         />
                                         <EventCardComponent
                                             img={Event5}
@@ -451,6 +455,7 @@ function HomeLayout() {
                                             time='12:00 pm'
                                             price={'600'}
                                             location={'Central Building'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLScqN0rb0813zU_A3e0L5MLkP8VacMMLuCvfNP5RZ8cA5h28lA/viewform'}
                                         />
                                         <EventCardComponent
                                             img={Event6}
@@ -460,9 +465,10 @@ function HomeLayout() {
                                             time='4:00 pm'
                                             price={'200'}
                                             location={'Central Building'}
+                                            url={'https://docs.google.com/forms/d/e/1FAIpQLSf5tKGrklxGK6_gqkbelpShOS_UmQx-sxfICISZnFg4K4Qg2g/viewform?usp=sf_link'}
                                         />
                                     </div>
-                                    <motion.a href="https://ambrosia-2024.vercel.app/timeline.pdf" rel="noreferrer" target="_blank" className='mt-8 head footerBorder bg-white/80 w-full max-w-lg flex items-center justify-center mx-auto py-1 xs:py-2 md:py-3 rounded-lg sm:rounded-xl text-black '> Download Full Timeline ...</motion.a>
+                                    <a href="https://ambrosia-2024.vercel.app/timeline.pdf" rel="noreferrer" target="_blank" className='mt-8 head footerBorder bg-white/80 w-full max-w-lg flex z-50 items-center justify-center mx-auto py-1 xs:py-2 md:py-3 rounded-lg sm:rounded-xl text-black '> Download Full Timeline ...</a>
 
                                 </SectionContainer>
                                 {/* <SectionContainer title={'Members'} id={'Member'} >
