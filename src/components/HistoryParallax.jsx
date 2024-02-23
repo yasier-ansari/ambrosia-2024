@@ -41,6 +41,7 @@ const HistoryParallax = ({ products }) => {
     return (
         <div
             ref={ref}
+            id="History"
             className="h-full pb-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
