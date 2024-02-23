@@ -27,7 +27,7 @@ const AnimatedTooltip = ({ items, className }) => {
     };
     randomRotation()
     return (
-        <div className={cn(`flex items-center justify-center ${className} flex-wrap`)} >
+        <div className={cn(`flex items-center justify-center ${className} flex-wrap`)}  id='Member'>
             {items?.map((item) => (
                 <div
                     className="-mr-4 relative group"
