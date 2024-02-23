@@ -89,24 +89,24 @@ function App() {
                   Ambrosia has consistently drawn overwhelming foot traffic. Join us in experiencing the fusion of technology, culture, and community at
                   Ambrosia - a celebration like no other.
                 </div>
-                <SectionContainer title={'Events'} >
-                  <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 ">
+                <SectionContainer title={'Events'} className="justify-center text-center">
+                  <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 " id='Event'>
                     <EventCardComponent
 
                       img={Event1}
                       title={'Shark Tank'}
                       text='getget ready for an amazing treasure hunt ready for an amazinget treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
+                      date={'Mar, 6'}
+                      time='2:00 pm '
                       price={'200'}
-                      location={'Central Building'}
+                      location={'Classroom'}
                     />
                     <EventCardComponent
                       img={Event2}
                       title={'Halloween Hunt'}
                       text='get ready for an amazing treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
+                      date={'Mar, 6'}
+                      time='2:00 pm'
                       price={'200'}
                       location={'Central Building'}
                     />
@@ -114,8 +114,8 @@ function App() {
                       img={Event3}
                       title={'Musical Night'}
                       text='get ready for an amazing treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
+                      date={'Mar, 7'}
+                      time='7:00 pm'
                       price={'200'}
                       location={'Central Building'}
                     />
@@ -123,8 +123,8 @@ function App() {
                       img={Event4}
                       title={'Car & Bike Meet'}
                       text='get ready for an amazing treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
+                      date={'Mar, 7'}
+                      time='2:00 pm'
                       price={'200'}
                       location={'Central Building'}
                     />
@@ -132,30 +132,32 @@ function App() {
                       img={Event5}
                       title={'Tug Of War'}
                       text='get ready for an amazing treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
-                      price={'200'}
+                      date={'Mar, 2-4'}
+                      time='12:00 pm'
+                      price={'600'}
                       location={'Central Building'}
                     />
                     <EventCardComponent
                       img={Event6}
                       title={'Stand Up Eve'}
                       text='get ready for an amazing treasure hunt'
-                      date={'Sat, 12'}
-                      time='4:30 - 6:30 pm'
+                      date={'Mar, 6'}
+                      time='4:00 pm'
                       price={'200'}
                       location={'Central Building'}
                     />
                   </div>
+                  <div className='mt-8'><p>And Many More...</p></div>
+
                 </SectionContainer>
-                <SectionContainer title={'Members'}  >
+                <SectionContainer title={'Members'}>
                   <AnimatedTooltip items={people} className='pt-8 px-12 md:px-16 lg:px-24' />
                 </SectionContainer>
                 <SectionContainer title={'History'} >
                   <HistoryParallax products={events} />
                 </SectionContainer>
-                <SectionContainer title={'Sponsors'} >
-                  <div className="grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-2 lg:grid-cols-3 mt-12 px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 ">
+                <SectionContainer title={'Sponsors'}>
+                  <div className="grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-2 lg:grid-cols-3 mt-12 px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 " id='Sponsor'>
                     <img src={Sponsor1} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto rotate-3  " />
                     <img src={Sponsor2} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto -rotate-3  " />
                     <img src={Sponsor3} className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-16 w-auto -rotate-6  " />
@@ -213,7 +215,7 @@ function App() {
                           </div>
                           <h4 className="henny" >From Byculla</h4>
                         </div>
-                        <p className="glowText font-extralight" >Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
+                        <p className="glowText font-extralight" >Take sharing Taxi, till Saboo Siddik college or Walk upto 15-20 mins </p>
                       </div>
                       <div className="flex flex-col items-start justify-center space-y-2">
                         <div className=" flex items-center justify-center space-x-3 glowText henny text-xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -224,7 +226,7 @@ function App() {
                             <h4 className="henny" >From Mumbai Central</h4>
                           </div>
                         </div>
-                        <p className="glowText font-extralight" >Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
+                        <p className="glowText font-extralight" >Take sharing Taxi, till Saboo Siddik college or Walk upto 10-15 mins</p>
                       </div>
                     </div>
                   </div>
