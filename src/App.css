@@ -5,7 +5,7 @@
 }
 
 .head {
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RTqv2DpNys3JchDF1evivAHaFF%26pid%3DApi&f=1&ipt=96e2706a0de7681fc8ae0b3e884267070de893aeba40f38526cdc9e3a70a1c50&ipo=images');
   background-position: center;
   background-size: cover;

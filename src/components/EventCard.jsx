@@ -4,7 +4,7 @@ import EventCard from '../assets/images/event-card.jpg'
 import { motion } from 'framer-motion'
 import { fadeInUp } from "../utils/merge"
 
-const EventCardComponent = ({ img, title, text, button, date, time, price, location }) => {
+const EventCardComponent = ({ img, title, text, button, date, time, price, location, url }) => {
     // const rotateAngle = [-2, -3, 3, 2, 6, -6]
     // const getRandomRotateAngle = () => {
     //     const randomIndex = Math.floor(Math.random() * rotateAngle.length);
@@ -20,11 +20,10 @@ const EventCardComponent = ({ img, title, text, button, date, time, price, locat
                 backgroundPosition: "bottom",
                 backgroundSize: "cover",
             }}
-            className="flex w-full min-w-32 min-h-64 h-auto aspect-[9/12] max-w-[300px] footerBorder flex-col justify-around items-center mx-auto space-y-3 px-2 sm:px-3 -py-8  ">
-            <img src={img} className={`bg-zinc-200 p-2 rounded-lg footerBorder aspect-video w-full h-auto rotate-3  `} />
-            <div className="w-full flex justify-center items-center flex-col space-y-2 mx-auto " >
+            className="flex w-full min-w-32 min-h-64 h-auto max-w-[300px] footerBorder flex-col justify-around items-center mx-auto space-y-3 px-2 sm:px-3 -py-8  ">
+            <img src={img} className={`bg-zinc-200 p-2 rounded-lg footerBorder aspect-[10/9] h-full w-auto rotate-3 object-cover object-top `} />
+            <div className="w-full flex justify-center items-center flex-col space-y-2  pb-2 md:pb-4 mx-auto " >
                 <h3 className="henny text-black font-bold text-2xl md:text-3xl lg:text-4xl text-center " >{title}</h3>
-                <h5 className=" text-black px-2 " >{text}</h5>
                 <div className="flex items-center flex-wrap justify-start w-full px-2 text-xs  md:text-sm">
                     <div className="bg-stone-600 flex items-center justify-start w-max m-1 footerBorder space-x-2 rounded-xl p-1 px-2 md:p-2 md:px-3 ">
                         <LuCalendarCheck2 />
@@ -43,6 +42,9 @@ const EventCardComponent = ({ img, title, text, button, date, time, price, locat
                         <p>{location}</p>
                     </div>
                 </div>
+                <a href={url} target="_blank" rel="noreferrer" className="flex items-center justify-center mx-auto bg-white/70 px-2 md:px-4 py-1 xs:py-2 md:py-3 text-black glowText font-normal rounded-md xs:rounded-lg md:rounded-xl ">
+                    Register
+                </a>
             </div>
         </motion.div>
     )

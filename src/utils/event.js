@@ -1,95 +1,88 @@
+import Hist1 from "../assets/images/hist-1.png";
+import Hist2 from "../assets/images/hist-2.png";
+import Hist3 from "../assets/images/hist-3.png";
+import Hist4 from "../assets/images/hist-4.png";
+import Hist5 from "../assets/images/hist-5.png";
+import Hist6 from "../assets/images/hist-6.png";
+import Hist7 from "../assets/images/hist-7.png";
+import Hist8 from "../assets/images/hist-8.png";
+import Hist9 from "../assets/images/hist-9.png";
+
 export const events = [
+  {
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: Hist6,
+  },
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: Hist1,
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    thumbnail: Hist2,
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    thumbnail: Hist6,
+  },
+  {
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: Hist1,
+  },
+  {
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: Hist3,
+  },
+  {
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: Hist8,
+  },
+  {
+    title: "Cursor",
+    link: "https://cursor.so",
+    thumbnail: Hist9,
+  },
+  {
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: Hist3,
+  },
+  {
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: Hist8,
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: Hist4,
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: Hist5,
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Cursor",
+    link: "https://cursor.so",
+    thumbnail: Hist7,
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: Hist5,
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: Hist4,
   },
 ];

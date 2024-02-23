@@ -91,8 +91,11 @@ export const Header = () => {
             <h1 className="text-4xl md:text-7xl xl:text-8xl glowText font-bold dark:text-white henny ">
                 The Ultimate <br /> College Fest to Attend
             </h1>
-            <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempora distinctio, ut impedit beatae eligendi velit doloremque debitis temporibus accusantium reprehenderit et sed incidunt laudantium porro odit esse minima modi?
+            <p className="max-w-3xl text-base md:text-xl mt-8 dark:text-neutral-200 glowText font-extralight">
+                Nestled in the heart of Byculla, our centrally located campus is
+                seamlessly connected to the Three lines of Mumbai Local, making it a convenient choice for students, especially during festival
+                times, owing to its superb facilities. <br /><br />
+                At the forefront is Ambrosia, the Techno-Cultural festival inaugurated in 2008. A stage for magical Car Exhibitions, Musical Nights, and Dance Shows. The history echoes with the commitment to social welfare through events like Blood Donations, Charity Drives, and Green Rallies. With over 5000 students, Ambrosia continues to draw magical foot traffic, creating a history that intertwines technology, culture, and community in the enchanted tapestry of our college&apos;s story.
             </p>
         </div>
     );
@@ -108,7 +111,7 @@ export const ProductCard = ({ product, translate }) => {
                 y: -20,
             }}
             key={product.title}
-            className="group/product h-96 w-[30rem] relative flex-shrink-0"
+            className="group/product footerBorder sepia-[50%] hover:sepia-0 h-96 w-[30rem] relative flex-shrink-0"
         >
             <a href={product.link} className="block group-hover/product:shadow-2xl ">
                 <img

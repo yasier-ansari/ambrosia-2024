@@ -19,6 +19,13 @@ import Sponsor3 from './assets/images/sponsor-3.png'
 import Sponsor4 from './assets/images/sponsor-4.png'
 import Sponsor5 from './assets/images/sponsor-5.png'
 import Sponsor6 from './assets/images/sponsor-6.png'
+
+import Event1 from './assets/images/event-1.png'
+import Event2 from './assets/images/event-2.png'
+import Event3 from './assets/images/event-3.png'
+import Event4 from './assets/images/event-4.png'
+import Event5 from './assets/images/event-5.png'
+import Event6 from './assets/images/event-6.png'
 import EventCard from './assets/images/event-card.jpg'
 import { LuCalendarCheck, LuDollarSign, LuMap, LuPin, LuPinOff, LuTimer } from "react-icons/lu";
 import PreLoader from "./components/PreLoader";
@@ -73,24 +80,21 @@ function App() {
                   <img src={FrontHeroImage} alt="asd" className="absolute -top-12 xs:-top-24 sm:-top-32 md:-top-40 lg:-top-64 w-full  " />
                   <img src={FrontHeroImage} alt="asd" className="absolute -top-0 w-full rotate-180 " />
                 </div>
-                <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 mt-28 xs:mt-36 sm:mt-48 md:mt-60 lg:mt-96 xl:mt-[420px] ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit cupiditate eligendi atque deserunt mollitia aliquid porro ratione nesciunt beatae, facilis totam neque nostrum molestiae quam. Nesciunt pariatur sunt praesentium dolorem.
-                  Beatae veniam harum sit iure accusamus ullam in optio architecto, quia corrupti et est distinctio ducimus! Ex nam magni reprehenderit, consequatur sapiente velit temporibus illo, sunt delectus harum, repellendus earum.
-                  Dolorum dicta sit officiis facere iusto officia culpa eum cupiditate. Unde quaerat corporis mollitia maxime beatae neque molestias ducimus aliquid, adipisci vero veritatis ea, cupiditate quod, dolor perferendis velit cumque!
-                  Laudantium, aliquam. Fugit quae animi pariatur aspernatur fuga eius quis unde, laboriosam sed a, quidem deleniti repudiandae eos ut consequatur, aperiam quibusdam dolores blanditiis facilis dolorum ipsum obcaecati itaque debitis.
-                  Dignissimos veniam tempore beatae delectus facilis. Distinctio mollitia natus repellat impedit velit, pariatur tenetur cupiditate fugit quia delectus reprehenderit nemo aperiam neque nobis ad veritatis illo modi atque eaque autem!
-                  Neque tempora accusantium corporis voluptatem ipsam molestias minima ut doloremque earum inventore porro similique nemo et commodi ducimus nam natus, maxime voluptatibus! Ipsum saepe laboriosam sapiente eum exercitationem, nihil distinctio!
-                  Nihil quae asperiores porro? Adipisci velit incidunt iusto quaerat iste eligendi reiciendis nobis mollitia itaque suscipit officiis repellat soluta fuga ipsa, consectetur illum beatae ratione odio aspernatur rem modi laudantium.
-                  Dignissimos corrupti rem numquam omnis? Corrupti pariatur saepe ratione eaque explicabo minus autem doloribus iusto quos error ad impedit ut possimus et quo dolorem, dolorum officia nemo odit ipsam soluta.
-                  Eum, perferendis, voluptatibus facilis, incidunt quidem commodi odio ducimus natus architecto quam maiores atque neque! Nesciunt nostrum velit architecto pariatur vero maiores vitae, molestias aperiam ullam in nobis expedita autem!
-                  Ipsam eum itaque sapiente ex libero, totam ab quos. Aut veniam voluptate quisquam magnam sit dicta illo ipsum laborum ea reiciendis inventore quos, temporibus qui aliquid et, tempore atque placeat!
+                <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 mt-28 xs:mt-36 sm:mt-48 md:mt-60 lg:mt-96 xl:mt-[420px] glowText text-lg font-extralight ">
+                  At the forefront of our vibrant campus culture is Ambrosia, our Techno-Cultural festival inaugurated in
+                  2008. This event showcases a diverse range of activities such as Car Exhibitions, Musical Nights, Dance Shows. Treasure Hunts, Go Karting, Paintball, Robo Wars,
+                  Mud Rally, Laser Tag, Rock Shows, LAN Gaming, and more.
+                  Additionally, our commitment to social welfare is evident through events like Blood Donations, Charity Drives, and Green
+                  Rallies, all of which have received tremendous responses. With an impressive turnover of over 5000 students solely from our college.
+                  Ambrosia has consistently drawn overwhelming foot traffic. Join us in experiencing the fusion of technology, culture, and community at
+                  Ambrosia - a celebration like no other.
                 </div>
                 <SectionContainer title={'Events'} >
                   <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 grid gap-12 grid-cols-auto place-content-center place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 ">
                     <EventCardComponent
 
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event1}
+                      title={'Shark Tank'}
                       text='getget ready for an amazing treasure hunt ready for an amazinget treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -98,8 +102,8 @@ function App() {
                       location={'Central Building'}
                     />
                     <EventCardComponent
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event2}
+                      title={'Halloween Hunt'}
                       text='get ready for an amazing treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -107,8 +111,8 @@ function App() {
                       location={'Central Building'}
                     />
                     <EventCardComponent
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event3}
+                      title={'Musical Night'}
                       text='get ready for an amazing treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -116,8 +120,8 @@ function App() {
                       location={'Central Building'}
                     />
                     <EventCardComponent
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event4}
+                      title={'Car & Bike Meet'}
                       text='get ready for an amazing treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -125,8 +129,8 @@ function App() {
                       location={'Central Building'}
                     />
                     <EventCardComponent
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event5}
+                      title={'Tug Of War'}
                       text='get ready for an amazing treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -134,8 +138,8 @@ function App() {
                       location={'Central Building'}
                     />
                     <EventCardComponent
-                      img={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xRplVX1ia3NMexehWl0BnQHaEj%26pid%3DApi&f=1&ipt=3d6f67e3052c579228ecb5199a15a31b41a0780ee3dacfb9be096221b0b4dc63&ipo=images'}
-                      title={'Treasure Hunt'}
+                      img={Event6}
+                      title={'Stand Up Eve'}
                       text='get ready for an amazing treasure hunt'
                       date={'Sat, 12'}
                       time='4:30 - 6:30 pm'
@@ -145,7 +149,7 @@ function App() {
                   </div>
                 </SectionContainer>
                 <SectionContainer title={'Members'}  >
-                  <AnimatedTooltip items={people} className='pt-8 px-6 sm:px-12 md:px-16 lg:px-24' />
+                  <AnimatedTooltip items={people} className='pt-8 px-12 md:px-16 lg:px-24' />
                 </SectionContainer>
                 <SectionContainer title={'History'} >
                   <HistoryParallax products={events} />
@@ -201,7 +205,7 @@ function App() {
                         referrerPolicy="no-referrer-when-downgrade"
                       ></iframe>
                     </figure>
-                    <div className="flex items-center justify-around  w-full space-x-20">
+                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-around  w-full space-y-8 md:space-y-0 md:space-x-20">
                       <div className="flex flex-col items-start justify-center space-y-2">
                         <div className=" flex items-center justify-center space-x-4 glowText henny text-xl sm:text-2xl md:text-3xl">
                           <div className=" h-10 w-10 bg-gray-300 p-2 footerBorder items-center justify-center flex text-yellow-700 rotate-12 " >
@@ -209,7 +213,7 @@ function App() {
                           </div>
                           <h4 className="henny" >From Byculla</h4>
                         </div>
-                        <p>Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
+                        <p className="glowText font-extralight" >Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
                       </div>
                       <div className="flex flex-col items-start justify-center space-y-2">
                         <div className=" flex items-center justify-center space-x-3 glowText henny text-xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -220,27 +224,18 @@ function App() {
                             <h4 className="henny" >From Mumbai Central</h4>
                           </div>
                         </div>
-                        <p>Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
+                        <p className="glowText font-extralight" >Jaldi Aao Khana Khao, Khelo Kudo Aur ghar ko nikal lo. Kyunki kya hai na beta, aaj kal bahut accident hote hai, road dhyaan se cross karna</p>
                       </div>
                     </div>
                   </div>
 
                 </SectionContainer>
-                <div className=" px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 mb-28 xs:mb-36 sm:mb-48 md:mb-60 lg:mb-96 xl:mb-[420px] ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit cupiditate eligendi atque deserunt mollitia aliquid porro ratione nesciunt beatae, facilis totam neque nostrum molestiae quam. Nesciunt pariatur sunt praesentium dolorem.
-                  Beatae veniam harum sit iure accusamus ullam in optio architecto, quia corrupti et est distinctio ducimus! Ex nam magni reprehenderit, consequatur sapiente velit temporibus illo, sunt delectus harum, repellendus earum.
-                  Dolorum dicta sit officiis facere iusto officia culpa eum cupiditate. Unde quaerat corporis mollitia maxime beatae neque molestias ducimus aliquid, adipisci vero veritatis ea, cupiditate quod, dolor perferendis velit cumque!
-                  Laudantium, aliquam. Fugit quae animi pariatur aspernatur fuga eius quis unde, laboriosam sed a, quidem deleniti repudiandae eos ut consequatur, aperiam quibusdam dolores blanditiis facilis dolorum ipsum obcaecati itaque debitis.
-                  Dignissimos veniam tempore beatae delectus facilis. Distinctio mollitia natus repellat impedit velit, pariatur tenetur cupiditate fugit quia delectus reprehenderit nemo aperiam neque nobis ad veritatis illo modi atque eaque autem!
-                  Neque tempora accusantium corporis voluptatem ipsam molestias minima ut doloremque earum inventore porro similique nemo et commodi ducimus nam natus, maxime voluptatibus! Ipsum saepe laboriosam sapiente eum exercitationem, nihil distinctio!
-                  Nihil quae asperiores porro? Adipisci velit incidunt iusto quaerat iste eligendi reiciendis nobis mollitia itaque suscipit officiis repellat soluta fuga ipsa, consectetur illum beatae ratione odio aspernatur rem modi laudantium.
-                  Dignissimos corrupti rem numquam omnis? Corrupti pariatur saepe ratione eaque explicabo minus autem doloribus iusto quos error ad impedit ut possimus et quo dolorem, dolorum officia nemo odit ipsam soluta.
-                  Eum, perferendis, voluptatibus facilis, incidunt quidem commodi odio ducimus natus architecto quam maiores atque neque! Nesciunt nostrum velit architecto pariatur vero maiores vitae, molestias aperiam ullam in nobis expedita autem!
-                  Ipsam eum itaque sapiente ex libero, totam ab quos. Aut veniam voluptate quisquam magnam sit dicta illo ipsum laborum ea reiciendis inventore quos, temporibus qui aliquid et, tempore atque placeat!
+                <div className=" glowText font-extralight px-4 xs:px-8 sm:px-12 md:px-20 lg:px-32 xl:px-44 mb-28 xs:mb-36 sm:mb-48 md:mb-60 lg:mb-96 xl:mb-[420px] ">
+                  So... are you apparating to the grand spectacle or not? 🧙‍♂️ Join us at Ambrosia, the magical Techno-Cultural festival of M.H. Saboo Siddik College of Engineering! Picture this: Car Exhibitions on flying broomsticks, Musical Nights with tunes straight out of Hogwarts, and Dance Shows that would make even house-elves groove. Ambrosia consistently draws foot traffic like a magnet. Don your wizarding robes, grab your wands (or pens), and join us in this celebration like no other. So, are you ready to immerse yourself in the magic of technology, culture, and community? 🎉✨ See you at Ambrosia—where the magic happens!
                 </div>
                 <div className="w-full h-full absolute bottom-0 ">
-                  <img src={FrontHeroImage} alt="asd" className="absolute -bottom-20 xs:-bottom-10 md:bottom-6 lg:bottom-10 xl:bottom-12 w-full z-60 " />
-                  <img src={FrontHeroImage} alt="asd" className="absolute -bottom-36 xl:-bottom-52 w-full rotate-180 z-50 " />
+                  <img src={FrontHeroImage} alt="asd" className="absolute -bottom-12 xs:-bottom-10 md:bottom-6 lg:bottom-10 xl:bottom-12 w-full z-60 " />
+                  <img src={FrontHeroImage} alt="asd" className="absolute -bottom-28 xl:-bottom-52 w-full rotate-180 z-50 " />
                 </div>
               </section>
               <SecondParallax />
