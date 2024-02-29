@@ -5,13 +5,6 @@ import { motion } from 'framer-motion'
 import { fadeInUp } from "../utils/merge"
 
 const EventCardComponent = ({ img, title, text, button, date, time, price, location, url }) => {
-    // const rotateAngle = [-2, -3, 3, 2, 6, -6]
-    // const getRandomRotateAngle = () => {
-    //     const randomIndex = Math.floor(Math.random() * rotateAngle.length);
-    //     console.log(rotateAngle[randomIndex])
-    //     return rotateAngle[randomIndex];
-    // };
-
     return (
         <motion.div
             data-aos={"fade-up"}
@@ -42,9 +35,9 @@ const EventCardComponent = ({ img, title, text, button, date, time, price, locat
                         <p>{location}</p>
                     </div>
                 </div>
-                <a href={url} target="_blank" rel="noreferrer" className="flex items-center justify-center mx-auto bg-white/70 px-3 sm:px-4 md:px-6 lg:px-8 py-1 sm:py-2 text-black glowText font-normal rounded-md xs:rounded-lg md:rounded-xl ">
+                {/* <a href={url} rel="noreferrer" target="_blank" className="flex  z-50 items-center justify-center mx-auto bg-white/70 px-3 sm:px-4 md:px-6 lg:px-8 py-1 sm:py-2 text-black glowText font-normal rounded-md xs:rounded-lg md:rounded-xl ">
                     Register
-                </a>
+                </a> */}
             </div>
         </motion.div>
     )

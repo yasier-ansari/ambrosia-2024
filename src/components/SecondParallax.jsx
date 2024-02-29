@@ -61,18 +61,25 @@ const SecondParallax = ({ className }) => {
                 <div className="md:w-[20%]" >
                     <img src={Logo} className="rounded-full w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 " />
                 </div>
-                <div className="w-full md:w-[40%] flex flex-col items-center justify-center " >
-                    <div className="flex items-center justify-start space-x-4" >
-                        <p className=" text-xs md:text-sm " >Safwan</p>
+                <div className="w-full md:w-[40%] flex flex-col items-center justify-center space-y-4 " >
+                    <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row items-center justify-center md:justify-start md:space-x-4" >
+                        <div className="flex items-center md:items-start justify-start flex-col">
+                            <p className=" text-sm md:text-base font-[600] " >Safwan Bebal</p>
+                            <p className=" text-xs md:text-sm text-black/80" >General Secretary</p>
+                        </div>
                         <p className="xs:text-lg sm:text-xl md:text-2xl" >9769537374</p>
                     </div>
-                    <div className="flex items-center justify-start space-x-4" >
-                        <p className=" text-xs md:text-sm " >Owesh</p>
-                        <p className="xs:text-lg sm:text-xl md:text-2xl" >7718018404</p>
+                    <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row items-center justify-center md:justify-start md:space-x-4" >
+                        <div className="flex items-center md:items-start justify-start flex-col">
+                            <p className=" text-sm md:text-base font-[600]" >Owesh Chaiwala</p>
+                            <p className=" text-xs md:text-sm text-black/80" >Cultural Secretary</p>
+                        </div>                        <p className="xs:text-lg sm:text-xl md:text-2xl" >7718018404</p>
                     </div>
-                    <div className="flex items-center justify-start space-x-4" >
-                        <p className=" text-xs md:text-sm " >Muzakkir</p>
-                        <p className="xs:text-lg sm:text-xl md:text-2xl" >9619823196</p>
+                    <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row items-center justify-center md:justify-start md:space-x-4" >
+                        <div className="flex items-center md:items-start justify-start flex-col">
+                            <p className=" text-sm md:text-base font-[600] " >Muzakkir Siddique</p>
+                            <p className=" text-xs md:text-sm text-black/80" >Sport Secretary</p>
+                        </div>                        <p className="xs:text-lg sm:text-xl md:text-2xl" >9619823196</p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center w-full py-7 md:py-0 md:w-[30%] space-y-4 "  >
