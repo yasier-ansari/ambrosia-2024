@@ -13,12 +13,6 @@ import AnimatedTooltip from "./components/Member";
 import { people } from "./utils/members";
 import HistoryParallax from "./components/HistoryParallax";
 import { events } from "./utils/event";
-import Sponsor1 from './assets/images/sponsor-1.png'
-import Sponsor2 from './assets/images/sponsor-2.png'
-import Sponsor3 from './assets/images/sponsor-3.png'
-import Sponsor4 from './assets/images/sponsor-4.png'
-import Sponsor5 from './assets/images/sponsor-5.png'
-import Sponsor6 from './assets/images/sponsor-6.png'
 import Dubai from './assets/images/dubai-logo.webp'
 import Grabon from './assets/images/grabon-logo.png'
 import Heatz from './assets/images/heatz-logo.png'
@@ -27,7 +21,7 @@ import Micro from './assets/images/microdigit-logo.png'
 import Kokan from './assets/images/kokann-logo.png'
 import Zest from './assets/images/zest-logo.png'
 import Unique from './assets/images/unique-arts-logo.png'
-
+import Bull from './assets/images/bigg-bull-logo.jpg'
 
 import Event1 from './assets/images/event-1.png'
 import Event2 from './assets/images/event-2.png'
@@ -201,8 +195,8 @@ function HomeLayout() {
                                         <a href="https://www.grabon.in/" rel="noreferrer" target="_blank" className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-20 w-auto head aspect-[12/4] rotate-3 z-[99999]  " >
                                             <img src={Unique} className="w-full h-full  " />
                                         </a>
-                                        <a href="https://www.grabon.in/" rel="noreferrer" target="_blank" className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-20 w-auto head aspect-[12/4] rotate-3 z-[99999]  " >
-                                            <img src={Grabon} className="w-full h-full  " />
+                                        <a href="https://www.instagram.com/bigbullfitnesss?igsh=MWZoc2E2YTY4b3Rudg==" rel="noreferrer" target="_blank" className="bg-zinc-200 px-4 py-2 rounded-lg footerBorder h-20 w-auto head aspect-[12/4] rotate-3 z-[99999]  " >
+                                            <img src={Bull} className="w-full h-full object-contain " />
                                         </a>
                                         <a href="https://www.grabon.in/" rel="noreferrer" target="_blank" className=" px-4 py-2 rounded-lg  h-20 w-auto  aspect-[12/4] text-base sm:text-lg md:text-xl xl:text-2xl glowText font-light " >Graduate Vadapav</a>
                                         <a href="https://www.grabon.in/" rel="noreferrer" target="_blank" className="px-4 py-2 rounded-lg  h-20 w-auto  aspect-[12/4] text-base sm:text-lg md:text-xl xl:text-2xl glowText font-light " >Barbeque Savour</a>
